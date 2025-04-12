@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav>
+    <div class="logo">Portfolio.</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#education">About</a></li> <!-- Updated -->
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="text">
+      <h1>Hello, It's Me</h1>
+      <h2>Nelakurthi Varalakshmi</h2>
+      <p>I am currently pursuing second year B.Tech in field of computer science with specialization of artificial intelligence and machine learning. I am an AI/ML and Webdesigning and Digital Marketing enthusiast. Always Passionate in learning new things and implement through hands on experiences and update myself day by day to become more competitive</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/varalakshmi-nelakurthi-b46986272/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nelakurthivaralakshmi03" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.hackerrank.com/profile/nelakurthivaral2" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        <a href="https://leetcode.com/u/nelakurthi_varalakshmi2003/" target="_blank" class="leet-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" />
+        </a>
+      </div><br>
+      
+      <a href="{{ url_for('download_resume') }}" class="btn">View My Resume</a>
+
+
+    </div>
+    <div class="profile-pic">
+        <img src="{{ url_for('static', filename='images/varalakshmi.jpeg') }}" alt="vara">
+    </div>
+  </section>
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="x">
+    <div class="edu-entry">
+      <h3>Anil Neerukonda Institute Of Technology And Sciences</h3>
+      <ul>
+        <li><strong>CSE WITH AIML</strong></li>
+        <li>2022 - 2026</li>
+      </ul>
+      <div class="progress-bar">
+        <div class="fill" style="width: 91%;">91%</div>
+      </div>
+    </div>
+    <div class="edu-entry">
+      <h3>Sri Saraswati Junior College</h3>
+      <ul>
+        <li><strong>MPC</strong></li>
+        <li>2020 - 2022</li>
+      </ul>
+      <div class="progress-bar">
+        <div class="fill" style="width: 98%;">98%</div>
+      </div>
+    </div>
+    <div class="edu-entry">
+      <h3>St. Marks English Medium High School</h3>
+      <ul>
+        <li><strong>SSC</strong></li>
+        <li>2019 - 2020</li>
+      </ul>
+      <div class="progress-bar">
+        <div class="fill" style="width: 98%;">98%</div>
+      </div>
+    </div>
+</div>
+  </section>
+
+
+
+
+  <section class="services" id="services">
+    <h2>Internships</h2>
+    <div class="internship-cards">
+  
+      <div class="internship-card">
+        <img src="{{ url_for('static', filename='images/ahub.png') }}" alt="A Hub" class="internship-img">
+
+        <h3>SEO & SMM Intern</h3>
+        <p><strong>Company:</strong> A Hub (Andhra University)</p>
+        <p>Worked on SEO optimization, social media marketing campaigns, and blog content strategies.</p>
+      </div>
+  
+      <div class="internship-card">
+        <img src="{{ url_for('static', filename='images/edu.png') }}" alt="A Hub" class="internship-img">
+
+        <h3>Digital Marketing Analyst</h3>
+        <p><strong>Company:</strong> Edumoon</p>
+        <p>Handled Instagram content creation, blog writing, and marketing strategy planning.</p>
+      </div>
+  
+    </div>
+  </section>
+
+
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-main-container">
+  
+      <!-- Frontend Skills -->
+      <div class="skills-category">
+        <h3>Frontend</h3>
+        <div class="skills-flex">
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+            <p>HTML</p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+          </div>
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+            <p>CSS</p>
+            <p class="stars">⭐⭐⭐⭐</p>
+          </div>
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+            <p>JavaScript</p>
+            <p class="stars">⭐⭐⭐</p>
+          </div>
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP Logo">
+            <p>PHP</p>
+            <p class="stars">⭐⭐⭐⭐</p>
+          </div>
+          
+        </div>
+      </div>  <!-- Programming Languages -->
+      <div class="skills-category">
+        <h3>Programming Languages</h3>
+        <div class="skills-flex">
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="C">
+            <p>C</p>
+            <p class="stars">⭐⭐⭐⭐</p>
+          </div>
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+            <p>Python</p>
+            <p class="stars">⭐⭐⭐⭐</p>
+          </div>
+          <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+            <p>Java</p>
+            <p class="stars">⭐⭐⭐</p>
+          </div>
+        </div>
+      </div>
+       <!-- Databases -->
+  <div class="skills-category">
+    <h3>Databases</h3>
+    <div class="skills-flex">
+      <div class="skill-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/528/528260.png" alt="MySQL">
+        <p>MySQL</p>
+        <p class="stars">⭐⭐⭐⭐</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png" alt="MongoDB">
+        <p>MongoDB</p>
+        <p class="stars">⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="x">
+  <div class="project-scroll-container">
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='images/foodorder.png') }}" alt="Food Ordering Website">
+      <div class="project-info">
+        <h3>Food Ordering Website – Indian Recipes Kitchen</h3>
+        <p>
+          A responsive food-ordering site where users can browse Veg/Non-Veg menus, place orders, and make payments.
+        </p><br>
+        <center><a href="#" class="project-btn">See Now</a></center>
+      </div>
+    </div>
+  
+    <div class="project-card">
+      <img src="{{ url_for('static', filename='images/apti.png') }}" alt="Aptitude Quiz Race">
+      <div class="project-info">
+        <h3>Aptitude Quiz Race</h3>
+        <p>
+          A fun and fast-paced quiz platform to build aptitude and problem-solving speed with interactive challenges.
+        </p><br>
+        <center> <a href="#" class="project-btn">See Now</a></center>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  </section>
+  
+  
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-details">
+          <p><strong>Email:</strong> <a href="nelakurthivaralakshmi.com">nelakurthivaralakshmi@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91-7620278523</p>
+          <p><strong>Location:</strong> Visakhapatnam, India</p>
+          <p><strong>Resume:</strong> <a href="{{ url_for('static', filename='images/varalakshmi.pdf') }}" download>Download PDF</a></p>
+      </div>
+  </div>
+  
+  </section>
+</body>
+</html>
